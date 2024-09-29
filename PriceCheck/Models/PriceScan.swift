@@ -8,11 +8,10 @@ import Foundation
 import SwiftUI
 
 struct PriceScan: Identifiable, Codable, Comparable {
-  var id: UUID  // Use UUID from the API
-  var item: String  // Item name
-  var price: Float  // Item price
-  var date: String  // Date as string
-  
+  var id: UUID
+  var item: String
+  var price: Float
+  var date: String
   enum CodingKeys : String, CodingKey{
     case id
     case item

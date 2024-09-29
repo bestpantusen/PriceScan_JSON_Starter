@@ -9,9 +9,9 @@ import SwiftUI
 
 struct Location: Identifiable, Codable, Comparable {
   
-  var id: UUID  // Use UUID from the API
-  var name: String  // Use "name" instead of "location"
-  var scans: [PriceScan]  // Array of PriceScan objects
+  var id: UUID
+  var name: String
+  var scans: [PriceScan]
   
   enum CodingKeys : String, CodingKey{
     case id
